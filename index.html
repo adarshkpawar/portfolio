@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Kailas Pawar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .copper-text { color: #B87333; }
+        .copper-bg { background-color: #B87333; }
+        .copper-border { border-color: #B87333; }
+        .copper-glow:hover { box-shadow: 0 0 15px rgba(184, 115, 51, 0.2); }
+        
+        /* Animated Background Line */
+        .line-drawing {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: draw 3s ease-out forwards;
+        }
+        @keyframes draw {
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body class="bg-white text-[#2D2D2D] selection:bg-[#B87333] selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold tracking-tighter text-xl">AKP<span class="copper-text">.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-[#B87333] transition-colors">About</a>
+                <a href="#experience" class="hover:text-[#B87333] transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-[#B87333] transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-[#B87333] transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden min-h-[80vh] flex items-center">
+        <!-- SVG Background Line -->
+        <svg class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none" viewBox="0 0 400 800">
+            <path class="line-drawing" d="M400,0 Q200,400 400,800" fill="none" stroke="#B87333" stroke-width="1" />
+        </svg>
+
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="max-w-2xl">
+                <h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-tight mb-6">
+                    Adarsh <br> Kailas Pawar
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-500 mb-4 font-light italic">
+                    Copper | Data | Systems | Strategy | Creativity
+                </p>
+                <p class="text-lg text-gray-600 mb-10 max-w-lg leading-relaxed">
+                    Analytical commerce professional building smarter workflows, cleaner data, and better systems in the copper industry.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#experience" class="px-8 py-3 bg-[#2D2D2D] text-white rounded-full hover:bg-[#B87333] transition-all duration-300 transform hover:-translate-y-1">
+                        View Experience
+                    </a>
+                    <button class="px-8 py-3 border border-[#B87333] text-[#B87333] rounded-full hover:bg-[#B87333] hover:text-white transition-all duration-300">
+                        Download Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 flex items-center">
+                <span class="w-12 h-[1px] bg-[#B87333] mr-4"></span>
+                About Me
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <p class="text-2xl font-light leading-relaxed text-gray-700">
+                        Analytical Commerce graduate currently pursuing an <span class="copper-text font-medium">MBA in Operations & Finance</span> at Chandigarh University.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        I bring a blend of analytical thinking, operational understanding, and data-driven decision-making to the copper industry. My work revolves around procurement, hedging, system design, and structured reporting.
+                    </p>
+                    <div class="grid grid-cols-5 gap-4 pt-6 text-center">
+                        <div><i data-lucide="bar-chart-3" class="mx-auto mb-2 text-gray-400"></i><span class="text-[10px] uppercase font-bold">Data</span></div>
+                        <div><i data-lucide="workflow" class="mx-auto mb-2 text-gray-400"></i><span class="text-[10px] uppercase font-bold">Flow</span></div>
+                        <div><i data-lucide="lightbulb" class="mx-auto mb-2 text-gray-400"></i><span class="text-[10px] uppercase font-bold">Strategy</span></div>
+                        <div><i data-lucide="pen-tool" class="mx-auto mb-2 text-gray-400"></i><span class="text-[10px] uppercase font-bold">Creative</span></div>
+                        <div><i data-lucide="book-open" class="mx-auto mb-2 text-gray-400"></i><span class="text-[10px] uppercase font-bold">Learn</span></div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#B87333]/5 rounded-bl-full"></div>
+                    <h3 class="text-xl font-bold mb-4">The Creative Synthesis</h3>
+                    <p class="text-gray-600 leading-relaxed italic mb-6">
+                        "Beyond numbers and metals, I am a curious learner who enjoys poetry, art, writing, and music—blending logic with creativity in everything I do."
+                    </p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-lucide="chevron-right" class="copper-text w-4 h-4 mr-2"></i>
+                        <span>Where Logic Meets Creativity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">Professional Journey</h2>
+            
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-gray-100 pb-12">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#B87333] border-4 border-white shadow-sm"></div>
+                    <div class="mb-2 flex flex-col md:flex-row md:items-center justify-between">
+                        <h3 class="text-xl font-bold">Dept. Executive | Hedging & Procurement</h3>
+                        <span class="copper-text font-medium text-sm">Bedmutha Industries Limited</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Present</p>
+                    <ul class="grid md:grid-cols-2 gap-y-2 text-sm text-gray-600 list-disc pl-4">
+                        <li>Managed copper hedging on MCX & LME</li>
+                        <li>Executed B2B & single-platform hedging</li>
+                        <li>Led end-to-end copper procurement</li>
+                        <li>Ensured raw material supply continuity</li>
+                    </ul>
+                </div>
+                <!-- Additional items shortened for brevity -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-[#2D2D2D] text-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16">Key Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 copper-glow transition-all">
+                    <span class="text-[10px] font-bold text-[#B87333] mb-4 block uppercase tracking-widest">Project 01</span>
+                    <h3 class="text-xl font-bold mb-4">Automated Hedging Engine</h3>
+                    <p class="text-gray-400 text-sm mb-6">Designed an automated Excel framework integrating MCX/LME data.</p>
+                    <div class="inline-block px-3 py-1 bg-[#B87333]/10 text-[#B87333] text-[10px] font-bold rounded-full uppercase">Efficiency +60%</div>
+                </div>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 copper-glow transition-all">
+                    <span class="text-[10px] font-bold text-[#B87333] mb-4 block uppercase tracking-widest">Project 02</span>
+                    <h3 class="text-xl font-bold mb-4">MOTS Tracking</h3>
+                    <p class="text-gray-400 text-sm mb-6">Built structured Tracking Sheets for supply chain visibility.</p>
+                    <div class="inline-block px-3 py-1 bg-[#B87333]/10 text-[#B87333] text-[10px] font-bold rounded-full uppercase">Visibility 100%</div>
+                </div>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 copper-glow transition-all">
+                    <span class="text-[10px] font-bold text-[#B87333] mb-4 block uppercase tracking-widest">Project 03</span>
+                    <h3 class="text-xl font-bold mb-4">Copper Dashboard</h3>
+                    <p class="text-gray-400 text-sm mb-6">Real-time summary tool for tracking MCX, LME, and SME trends.</p>
+                    <div class="inline-block px-3 py-1 bg-[#B87333]/10 text-[#B87333] text-[10px] font-bold rounded-full uppercase">Intelligence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="py-24 px-6 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Let's connect<span class="copper-text">.</span></h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+                <div class="flex items-center space-x-2"><i data-lucide="mail" class="w-5 h-5 text-gray-400"></i><span>adarshkpawar@gmail.com</span></div>
+                <div class="flex items-center space-x-2"><i data-lucide="phone" class="w-5 h-5 text-gray-400"></i><span>9762925137</span></div>
+            </div>
+            <p class="text-gray-400 text-sm uppercase tracking-widest">Adarsh Kailas Pawar © 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
